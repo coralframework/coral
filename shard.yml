@@ -1,0 +1,10 @@
+name: app
+version: 1.0.0
+
+dependencies:
+  radix:
+    github: luislavena/radix
+
+targets:
+  app:
+    main: src/coral.cr
