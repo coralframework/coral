@@ -3,5 +3,5 @@ Coral::Server.draw_routes do
 
   get "/users", UsersController, :index
   get "/users/:id", UsersController, :show
-  post "/users", MainController, :create
+  post "/users", UsersController, :create
 end

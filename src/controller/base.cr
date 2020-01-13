@@ -5,6 +5,13 @@ module Coral
 
       def initialize(@context : HTTP::Server::Context)
       end
+
+      macro render(template)
+        content = ECR.render {{template}}
+
+        context.response.print content
+        context
+      end
     end
   end
 end
